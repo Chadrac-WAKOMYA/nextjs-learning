@@ -14,9 +14,11 @@
     </script> -->
     <script type="text/jsx">
         const domNode = document.getElementById('app');
-        function header(){}
+        function Header(){
+          return <h1>Develop. Preview. Ship.</h1>;
+        }
         const root = ReactDOM.createRoot(domNode);
-        root.render(<h1>I want to be good at NextJs n NestJs technologies in the high level</h1>);
+        root.render(<Header />);
     </script>
   </body>
 </html>
