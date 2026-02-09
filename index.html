@@ -14,6 +14,7 @@
     </script> -->
     <script type="text/jsx">
         const domNode = document.getElementById('app');
+        
         function Header({title}){
           console.log(title);
           console.log(title);
@@ -24,20 +25,9 @@
           return(
             <div>
               <Header title="test"/>
-              <!-- <Header title="test_1"/> -->
             </div>
           );
-        }
-
-        function HomePage(){
-          return(
-            <div>
-              <Header title="test"/>
-              <!-- <Header title="test_1"/> -->
-              <!-- <Header title="test_2"/> -->
-            </div>
-          );
-        }
+        }        
         const root = ReactDOM.createRoot(domNode);
         root.render(<HomePage />);
     </script>
