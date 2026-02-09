@@ -15,9 +15,17 @@
     <script type="text/jsx">
         const domNode = document.getElementById('app');
         
+        function createTitle(title){
+          if(title){
+            return title;
+          }else{
+            return 'Default Title';
+          }
+        }
+
         function Header({title}){
           console.log(title);
-        return <h1>{title}</h1>;
+          return <h1>{createTitle(title)}</h1>;
         }
 
         function HomePage(){
