@@ -16,11 +16,7 @@
         const domNode = document.getElementById('app');
         
         function createTitle(title){
-          if(title){
-            return title;
-          }else{
-            return 'Default Title';
-          }
+          return title ? title : 'Default Title'
         }
 
         function Header({title}){
