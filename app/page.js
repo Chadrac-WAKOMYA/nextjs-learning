@@ -1,5 +1,5 @@
 
-import LikeButton from './app/like-button';
+import LikeButton from './like-button';
         
 function Header({title}){
   return <h1>{title ? title : 'Default Title'}</h1>;
