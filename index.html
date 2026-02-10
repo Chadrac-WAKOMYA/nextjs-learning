@@ -33,6 +33,9 @@
           function handleClick(){
             setLikes(likes + 1);
           }
+          function handleClick2(){
+            setLikes(likes -1);
+          }
           return(
             <div>
               <Header title="React is the best"/>
@@ -43,6 +46,7 @@
                 ))}
               </ul>
               <button onClick={handleClick}>Like{likes}</button>
+              <button onClick={handleClick2}>UnLike{likes}</button>
             </div>
           );
         }        
