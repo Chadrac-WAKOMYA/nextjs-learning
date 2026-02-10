@@ -1,10 +1,10 @@
-import { useState } from 'react';
+        import { useState } from 'react';
         
         function Header({title}){
           return <h1>{title ? title : 'Default Title'}</h1>;
         }
 
-        function HomePage(){
+        export default function HomePage(){
           
           const names = ['NextJs', 'NestJs', 'ReactJs'];
 
