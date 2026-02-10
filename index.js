@@ -1,7 +1,7 @@
 import { useState } from 'react';
         
         function Header({title}){
-          return title ? title : 'Default Title'
+          return <h1>{title ? title : 'Default Title'}</h1>;
         }
 
         function HomePage(){
