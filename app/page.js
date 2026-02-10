@@ -1,25 +1,21 @@
-
 import LikeButton from './like-button';
-        
-function Header({title}){
-  return <h1>{title ? title : 'Default Title'}</h1>;
+ 
+function Header({ title }) {
+  return <h1>{title ? title : 'Default title'}</h1>;
 }
-
-export default function HomePage(){
-  
-  const names = ['NextJs', 'NestJs', 'ReactJs'];
-
-  return(
+ 
+export default function HomePage() {
+  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+ 
+  return (
     <div>
-      <Header title="React is the best"/>
-      <Header title="Develop. Preview. Ship."/>
+      <Header title="Develop. Preview. Ship." />
       <ul>
-        {names.map((name)=>(
+        {names.map((name) => (
           <li key={name}>{name}</li>
         ))}
       </ul>
       <LikeButton />
     </div>
   );
-}    
-   
+}
