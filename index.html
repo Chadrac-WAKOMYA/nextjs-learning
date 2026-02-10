@@ -25,7 +25,11 @@
         }
 
         function HomePage(){
+          
           const names = ['NextJs', 'NestJs', 'ReactJs'];
+
+          const [likes, setLikes] = React.useState(0);
+          
           function handleClick(){
             console.log("increment Like count");
           }
