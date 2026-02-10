@@ -1,27 +1,7 @@
-<html>
-  <body>
-    <div id="app"></div>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!-- <script type="text/javascript">
-      const app = document.getElementById('app');
-      const header = document.createElement('h1');
-      const text = 'I want to be at NextJs n NestJs technologies';
-      const headerContent = document.createTextNode(text);
-      header.appendChild(headerContent);
-      app.appendChild(header);
-    </script> -->
-    <script type="text/jsx">
-        const domNode = document.getElementById('app');
+import { useState } from 'react';
         
-        function createTitle(title){
-          return title ? title : 'Default Title'
-        }
-
         function Header({title}){
-          console.log(title);
-          return <h1>{createTitle(title)}</h1>;
+          return title ? title : 'Default Title'
         }
 
         function HomePage(){
@@ -49,9 +29,5 @@
               <button onClick={handleClick2}>UnLike{likes}</button>
             </div>
           );
-        }        
-        const root = ReactDOM.createRoot(domNode);
-        root.render(<HomePage />);
-    </script>
-  </body>
-</html>
+        }    
+   
